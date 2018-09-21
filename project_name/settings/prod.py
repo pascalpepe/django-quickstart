@@ -17,3 +17,19 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = False
 
 ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(',')
+
+
+# Sending email
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+
+EMAIL_HOST = os.environ['EMAIL_HOST']
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True

@@ -124,3 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Sending email
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
+
+DEFAULT_FROM_EMAIL = 'noreply@{{ project_name }}.com'
