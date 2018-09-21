@@ -19,3 +19,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '{{ secret_key }}')
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+
+# Sending email
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
