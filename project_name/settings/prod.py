@@ -33,3 +33,13 @@ EMAIL_HOST = os.environ['EMAIL_HOST']
 EMAIL_PORT = 587
 
 EMAIL_USE_TLS = True
+
+
+# SSL/HTTPS
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/security/#ssl-https
+
+SECURE_SSL_REDIRECT = True
+
+CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
