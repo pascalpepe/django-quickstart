@@ -135,4 +135,52 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Sending email
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
 
-DEFAULT_FROM_EMAIL = 'noreply@{{ project_name }}.com'
+DEFAULT_FROM_EMAIL = 'webmaster@{{ project_name }}'
+
+
+# Error reporting
+# https://docs.djangoproject.com/en/{{ docs_version }}/howto/error-reporting/
+
+ADMINS = [
+    ('Admin', 'webmaster@{{ project_name }}'),
+]
+
+SERVER_EMAIL = 'root@{{ project_name }}'
+
+
+# Logging
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/logging/
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'verbose',
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    }
+}
