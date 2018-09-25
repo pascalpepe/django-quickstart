@@ -154,33 +154,48 @@ SERVER_EMAIL = 'root@{{ project_name }}'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
     'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime} {module} {message}',
+        'django.server': {
+            '()': 'django.utils.log.ServerFormatter',
+            'format': '[{server_time}] {levelname} {message}',
             'style': '{',
         },
     },
     'handlers': {
         'console': {
             'level': 'INFO',
+            'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
-            'formatter': 'verbose',
+        },
+        'django.server': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'filters': ['require_debug_true'],
+            'formatter': 'django.server',
         },
         'mail_admins': {
             'level': 'ERROR',
+            'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler',
-            'formatter': 'verbose',
-        }
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
-            'propagate': True,
+            'handlers': ['console', 'mail_admins'],
+            'level': 'INFO',
         },
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
+        'django.server': {
+            'handlers': ['django.server'],
+            'level': 'INFO',
+            'propagate': False,
         },
-    }
+    },
 }
