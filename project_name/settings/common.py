@@ -104,14 +104,13 @@ LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = [
     ('en', 'English'),
-    ('fr', 'français'),
 ]
 
 LOCALE_PATHS = [
     os.path.join(PROJECT_DIR, 'locale'),
 ]
 
-TIME_ZONE = 'Europe/Paris'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
