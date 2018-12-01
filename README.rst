@@ -33,10 +33,9 @@ Features
   from the same server as the site).
 * Site-wide HTTPS in production environment.
 * **Sphinx** documentation with the theme **sphinx-rtd-theme**.
-* **tox** configuration for testing the project, docs build and code quality
-  (with **flake8**).
-* **GitLab CI** configuration. All jobs are hidden and need to be activated
-  when the project is ready.
+* **tox** configuration for testing the project and the docs, and running code
+  quality checks with **flake8**.
+* **GitLab CI** configuration.
 
 Supported Django and Python versions
 ====================================
@@ -56,7 +55,7 @@ How to use
 `Install Django <https://docs.djangoproject.com/en/2.1/topics/install/>`_ and
 run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/open-source/padjana-start-django/-/archive/master/padjana-start-django-master.zip --extension py,rst
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/open-source/padjana-start-django/-/archive/master/padjana-start-django-master.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
