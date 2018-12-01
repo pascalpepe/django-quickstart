@@ -6,17 +6,26 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-import {{ project_name }}
+from datetime import date
+import os
+import sys
+
 
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+
+# Add docs directory to sys.path
+DOCS_DIR = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, DOCS_DIR)
+
+# Add base directory to sys.path
+BASE_DIR = os.path.join(DOCS_DIR, '..')
+sys.path.insert(0, BASE_DIR)
+
+import {{ project_name }}
 
 
 # -- Project information -----------------------------------------------------
