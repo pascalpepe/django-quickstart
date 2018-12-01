@@ -41,11 +41,14 @@ Features
 Supported Django and Python versions
 ====================================
 
-========== ================
-Django     Python
-========== ================
-2.1        3.5, 3.6, or 3.7
-========== ================
+====== =============
+Django Python
+====== =============
+2.1    3.5, 3.6, 3.7
+====== =============
+
+It is recommended that you install the latest minor releases (A.B.C) available
+for your system.
 
 How to use
 ==========
@@ -72,8 +75,11 @@ This project is licensed under the `MIT License <https://gitlab.com/padjana/open
 Supported Django and Python versions
 ====================================
 
-========== ================
-Django     Python
-========== ================
-2.1        3.5, 3.6, or 3.7
-========== ================
+====== =============
+Django Python
+====== =============
+2.1    3.5, 3.6, 3.7
+====== =============
+
+It is recommended that you install the latest minor releases (A.B.C) available
+for your system.
