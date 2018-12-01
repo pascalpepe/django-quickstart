@@ -31,7 +31,7 @@ import {{ project_name }}
 # -- Project information -----------------------------------------------------
 
 project = '{{ project_name }}'
-copyright = '2018, ' + {{ project_name }}.__author__
+copyright = '{}, {}'.format(date.today().year, mysite.__author__)
 author = {{ project_name }}.__author__
 
 # The short X.Y version
