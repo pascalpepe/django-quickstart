@@ -1,0 +1,45 @@
+before_script:
+  - pip install tox
+
+image: python:3.5
+
+services:
+  - postgres:latest
+
+variables:
+  POSTGRES_DB: postgres
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: ""
+
+.py35:
+  image: python:3.5
+  script:
+    - tox -e py35
+  only:
+    - master
+
+.py36:
+  image: python:3.6
+  script:
+    - tox -e py36
+  only:
+    - master
+
+.py37:
+  image: python:3.7
+  script:
+    - tox -e py37
+  only:
+    - master
+
+.docs:
+  script:
+    - tox -e docs
+  only:
+    - master
+
+.flake8:
+  script:
+    - tox -e flake8
+  only:
+    - master
