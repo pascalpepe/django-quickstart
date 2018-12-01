@@ -6,6 +6,8 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
+import {{ project_name }}
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -20,13 +22,13 @@
 # -- Project information -----------------------------------------------------
 
 project = '{{ project_name }}'
-copyright = '2018, Pascal Pepe'
-author = 'Pascal Pepe'
+copyright = '2018, ' + {{ project_name }}.__author__
+author = {{ project_name }}.__author__
 
 # The short X.Y version
-version = ''
+version = {{ project_name }}.__release_series__
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = {{ project_name }}.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -129,7 +131,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '{{ project_name }}.tex', '{{ project_name }} Documentation',
-     'Pascal Pepe', 'manual'),
+     [author], 'manual'),
 ]
 
 
