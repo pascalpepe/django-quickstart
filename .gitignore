@@ -1,4 +1,8 @@
-*.pyc
-.tox/
+*.py[co]
 __pycache__/
+
+# Documentation
 docs/_build/
+
+# Testing
+.tox/
