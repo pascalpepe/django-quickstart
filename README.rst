@@ -52,7 +52,7 @@ for your system.
 How to use
 ==========
 
-`Install Django <https://docs.djangoproject.com/en/2.1/topics/install/>`_ and
+`Install Django <https://docs.djangoproject.com/en/1.11/topics/install/>`_ and
 run the following command::
 
     django-admin startproject name [directory] --template https://gitlab.com/padjana/open-source/padjana-start-django/-/archive/stable/1.0.x/padjana-start-django-stable-1.0.x.zip --extension py,rst,txt
