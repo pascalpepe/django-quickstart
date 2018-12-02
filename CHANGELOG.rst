@@ -15,8 +15,8 @@ Supported Django and Python versions
 * Starting from this release, the template is compatible with Django 2.1 only.
 * Consequently,
 
-    - support for Python 3.4 is dropped,
-    - Python 3.7 is now supported.
+  - support for Python 3.4 is dropped,
+  - Python 3.7 is now supported.
 
 * Support for Django 1.11 LTS is now carried out through the branch
   `stable/1.0.x <https://gitlab.com/padjana/open-source/padjana-start-django/tree/stable/1.0.x>`_.
