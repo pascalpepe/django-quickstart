@@ -55,7 +55,7 @@ How to use
 ==========
 
 If you intend to start your project with Django 1.11 LTS, please refer to the
-`version 1.0 <https://gitlab.com/padjana/open-source/padjana-start-django/tree/stable/1.0.x>`_.
+`version 1.0 <https://gitlab.com/padjana/open-source/padjana-start-django/tree/stable/1.0.x>`_
 of this template.
 
 `Install Django <https://docs.djangoproject.com/en/2.1/topics/install/>`_ and
