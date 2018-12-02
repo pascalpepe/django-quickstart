@@ -4,19 +4,19 @@ Changelog
 
 {% comment %}
 
-Version 2.0
+Version 1.0
 ===========
 
-*2018-12-01*
+*2018-12-02*
 
 Supported Django and Python versions
 ------------------------------------
 
-====== =============
-Django Python
-====== =============
-2.1    3.5, 3.6, 3.7
-====== =============
+======== =============
+Django   Python
+======== =============
+1.11 LTS 3.4, 3.5, 3.6
+======== =============
 
 Initial features
 ----------------
@@ -34,9 +34,8 @@ Initial features
   from the same server as the site).
 * Site-wide HTTPS in production environment.
 * **Sphinx** documentation with the theme **sphinx-rtd-theme**.
-* **tox** configuration for testing the project, docs build and code quality
-  (with **flake8**).
-* **GitLab CI** configuration. All jobs are hidden and need to be activated
-  when the project is ready.
+* **tox** configuration for testing the project and the docs, and running code
+  quality checks with **flake8**.
+* **GitLab CI** configuration.
 
 {% endcomment %}

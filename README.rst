@@ -40,11 +40,11 @@ Features
 Supported Django and Python versions
 ====================================
 
-====== =============
-Django Python
-====== =============
-2.1    3.5, 3.6, 3.7
-====== =============
+==================== ======== =============
+Padjana Start Django Django   Python
+==================== ======== =============
+1.0                  1.11 LTS 3.4, 3.5, 3.6
+==================== ======== =============
 
 It is recommended that you install the latest minor releases (A.B.C) available
 for your system.
@@ -55,10 +55,10 @@ How to use
 `Install Django <https://docs.djangoproject.com/en/2.1/topics/install/>`_ and
 run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/open-source/padjana-start-django/-/archive/master/padjana-start-django-master.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/open-source/padjana-start-django/-/archive/stable/1.0.x/padjana-start-django-stable-1.0.x.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
-https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
+https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject
 
 License
 =======
@@ -74,11 +74,11 @@ This project is licensed under the `MIT License <https://gitlab.com/padjana/open
 Supported Django and Python versions
 ====================================
 
-====== =============
-Django Python
-====== =============
-2.1    3.5, 3.6, 3.7
-====== =============
+======== =============
+Django   Python
+======== =============
+1.11 LTS 3.4, 3.5, 3.6
+======== =============
 
 It is recommended that you install the latest minor releases (A.B.C) available
 for your system.
