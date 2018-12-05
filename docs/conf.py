@@ -25,7 +25,7 @@ sys.path.insert(0, DOCS_DIR)
 BASE_DIR = os.path.join(DOCS_DIR, '..')
 sys.path.insert(0, BASE_DIR)
 
-import {{ project_name }}
+import {{ project_name }}  # noqa
 
 
 # -- Project information -----------------------------------------------------
