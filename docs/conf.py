@@ -31,13 +31,14 @@ import {{ project_name }}
 # -- Project information -----------------------------------------------------
 
 project = '{{ project_name }}'
-copyright = '{}, {}'.format(date.today().year, {{ project_name }}.__author__)
-author = {{ project_name }}.__author__
+description = ''
+author = ''
+copyright = '{}, {}'.format(date.today().year, author)
 
 # The short X.Y version
-version = {{ project_name }}.__release_series__
+version = {{ project_name }}.RELEASE_SERIES
 # The full version, including alpha/beta/rc tags
-release = {{ project_name }}.__version__
+release = {{ project_name }}.VERSION
 
 
 # -- General configuration ---------------------------------------------------
@@ -140,7 +141,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '{{ project_name }}.tex', '{{ project_name }} Documentation',
-     [author], 'manual'),
+     author, 'manual'),
 ]
 
 
@@ -161,7 +162,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, '{{ project_name }}', '{{ project_name }} Documentation',
-     author, '{{ project_name }}', 'One line description of project.',
+     author, '{{ project_name }}', description,
      'Miscellaneous'),
 ]
 
