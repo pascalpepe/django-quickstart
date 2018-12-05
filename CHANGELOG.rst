@@ -4,6 +4,18 @@ Changelog
 
 {% comment %}
 
+Version 1.1
+===========
+
+*2018-12-05*
+
+Changed
+-------
+
+* Renamed version-related variables from "dunder" format to constant variables.
+
+----
+
 Version 1.0
 ===========
 
