@@ -9,6 +9,11 @@ Version 1.1
 
 *2018-12-05*
 
+Added
+-----
+
+* Added paths to static and templates directories in common settings.
+
 Changed
 -------
 
@@ -36,18 +41,18 @@ Initial features
 * **PostgreSQL** as default database backend.
 * Loading sensible settings values (e.g. secret key, database password) from
   environment variables.
-* Different settings and requirements for multiple deployment environments
-  (e.g. development, production).
-* Project translatable from the get-go.
-* Sending email (using the console backend for development and the SMTP backend
-  for production).
+* Different settings for multiple deployment environments (e.g. development,
+  production).
+* Ready for internationalization.
+* Settings for sending email.
 * Error reporting and logging.
 * Storage and deployment of static files (assuming that static files are served
   from the same server as the site).
-* Site-wide HTTPS in production environment.
-* **Sphinx** documentation with the theme **sphinx-rtd-theme**.
-* **tox** configuration for testing the project and the docs, and running code
-  quality checks with **flake8**.
+* Enforced site-wide HTTPS in production environment.
+* **Sphinx** documentation initialized with a changelog file and using the
+  theme sphinx-rtd-theme.
+* Code quality checks with **flake8**.
+* Automated testing with **tox**.
 * **GitLab CI** configuration.
 
 {% endcomment %}
