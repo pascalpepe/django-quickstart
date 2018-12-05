@@ -24,6 +24,11 @@ Supported Django and Python versions
   2.1                  2.1      3.5, 3.6, 3.7
   ==================== ======== =============
 
+Added
+-----
+
+* Added paths to static and templates directories in common settings.
+
 Changed
 -------
 
