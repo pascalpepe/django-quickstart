@@ -38,7 +38,7 @@ Supported Django and Python versions
 
 * Starting from this release, the template is compatible with Django 2.1 only.
 * Support for Django 1.11 LTS is now carried out through the branch
-  `support/django111 <https://gitlab.com/padjana/django-project-template/tree/support/django111>`_.
+  `support/django111 <https://gitlab.com/padjana/padjana-startproject/tree/support/django111>`_.
 * Consequently,
 
   - support for Python 3.4 is dropped,
