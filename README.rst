@@ -29,13 +29,11 @@ Features
 Supported Django and Python versions
 ====================================
 
-==================== ======== =============
-Padjana Start Django Django   Python
-==================== ======== =============
-1.1                  1.11 LTS 3.4, 3.5, 3.6
--------------------- -------- -------------
-2.1                  2.1      3.5, 3.6, 3.7
-==================== ======== =============
+======== =============
+Django   Python
+======== =============
+1.11 LTS 3.4, 3.5, 3.6
+======== =============
 
 It is recommended that you install the latest minor releases (A.B.C) available
 for your system.
@@ -46,7 +44,7 @@ Usage
 `Install Django 1.11 <https://docs.djangoproject.com/en/1.11/topics/install/>`_
 and run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/stable/1.2.x/django-project-template-stable-1.2.x.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/support/django111/django-project-template-support-django111.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject
