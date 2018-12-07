@@ -9,21 +9,6 @@ Version 2.2
 
 *2018-12-07*
 
-Supported Django and Python versions
-------------------------------------
-
-* Support for Django 1.11 LTS is now carried out through the branch
-  `support/django111 <https://gitlab.com/padjana/django-project-template/tree/support/django111>`_.
-* The compatibility table is now:
-
-  ================= ======== =============
-  Branch            Django   Python
-  ================= ======== =============
-  support/django111 1.11 LTS 3.4, 3.5, 3.6
-  ----------------- -------- -------------
-  master            2.1      3.5, 3.6, 3.7
-  ================= ======== =============
-
 Changed
 -------
 
@@ -35,21 +20,6 @@ Version 2.1
 ===========
 
 *2018-12-05*
-
-Supported Django and Python versions
-------------------------------------
-
-* Support for Django 1.11 LTS is now carried out through the branch
-  `stable/1.1.x <https://gitlab.com/padjana/django-project-template/tree/stable/1.1.x>`_.
-* The compatibility table is now:
-
-  ==================== ======== =============
-  Padjana Start Django Django   Python
-  ==================== ======== =============
-  1.1                  1.11 LTS 3.4, 3.5, 3.6
-  -------------------- -------- -------------
-  2.1                  2.1      3.5, 3.6, 3.7
-  ==================== ======== =============
 
 Added
 -----
@@ -67,22 +37,22 @@ Supported Django and Python versions
 ------------------------------------
 
 * Starting from this release, the template is compatible with Django 2.1 only.
+* Support for Django 1.11 LTS is now carried out through the branch
+  `support/django111 <https://gitlab.com/padjana/django-project-template/tree/support/django111>`_.
 * Consequently,
 
   - support for Python 3.4 is dropped,
   - Python 3.7 is now supported.
 
-* Support for Django 1.11 LTS is now carried out through the branch
-  `stable/1.0.x <https://gitlab.com/padjana/django-project-template/tree/stable/1.0.x>`_.
 * The compatibility table is now:
 
-  ==================== ======== =============
-  Padjana Start Django Django   Python
-  ==================== ======== =============
-  1.0                  1.11 LTS 3.4, 3.5, 3.6
-  -------------------- -------- -------------
-  2.0                  2.1      3.5, 3.6, 3.7
-  ==================== ======== =============
+  ================= ======== =============
+  Branch            Django   Python
+  ================= ======== =============
+  support/django111 1.11 LTS 3.4, 3.5, 3.6
+  ----------------- -------- -------------
+  master            2.1      3.5, 3.6, 3.7
+  ================= ======== =============
 
 Changed
 -------
