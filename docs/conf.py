@@ -36,9 +36,9 @@ author = ''
 copyright = '{}, {}'.format(date.today().year, author)
 
 # The short X.Y version
-version = {{ project_name }}.RELEASE_SERIES
+version = {{ project_name }}.__release_series__
 # The full version, including alpha/beta/rc tags
-release = {{ project_name }}.VERSION
+release = {{ project_name }}.__version__
 
 
 # -- General configuration ---------------------------------------------------
