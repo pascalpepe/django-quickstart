@@ -1,8 +1,8 @@
 {% comment %}
 
-============================
-Padjana Start Django Project
-============================
+=======================
+django-project-template
+=======================
 
 Project template for a quick start with Django framework.
 
@@ -29,13 +29,13 @@ Features
 Supported Django and Python versions
 ====================================
 
-==================== ======== =============
-Padjana Start Django Django   Python
-==================== ======== =============
-1.1                  1.11 LTS 3.4, 3.5, 3.6
--------------------- -------- -------------
-2.1                  2.1      3.5, 3.6, 3.7
-==================== ======== =============
+================= ======== =============
+Branch            Django   Python
+================= ======== =============
+support/django111 1.11 LTS 3.4, 3.5, 3.6
+----------------- -------- -------------
+master            2.1      3.5, 3.6, 3.7
+================= ======== =============
 
 It is recommended that you install the latest minor releases (A.B.C) available
 for your system.
@@ -49,7 +49,7 @@ With Django 1.11 LTS
 `Install Django 1.11 <https://docs.djangoproject.com/en/1.11/topics/install/>`_
 and run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/padjana-start-django/-/archive/stable/1.1.x/padjana-start-django-stable-1.1.x.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/support/django111/django-project-template-support-django111.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject
@@ -60,7 +60,7 @@ With Django 2.1
 `Install Django 2.1 <https://docs.djangoproject.com/en/2.1/topics/install/>`_
 and run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/padjana-start-django/-/archive/master/padjana-start-django-master.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/master/django-project-template-master.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
@@ -81,7 +81,7 @@ License
 =======
 
 This project is licensed under the
-`MIT License <https://gitlab.com/padjana/padjana-startapp-django/blob/master/LICENSE>`_.
+`MIT License <https://gitlab.com/padjana/django-project-template/blob/master/LICENSE>`_.
 
 {% endcomment %}
 
