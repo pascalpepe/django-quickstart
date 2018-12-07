@@ -1,8 +1,8 @@
 {% comment %}
 
-============================
-Padjana Start Django Project
-============================
+=======================
+django-project-template
+=======================
 
 Project template for a quick start with Django framework.
 
@@ -46,7 +46,7 @@ Usage
 `Install Django 1.11 <https://docs.djangoproject.com/en/1.11/topics/install/>`_
 and run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/padjana-start-django/-/archive/stable/1.1.x/padjana-start-django-stable-1.1.x.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/stable/1.1.x/django-project-template-stable-1.1.x.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject
@@ -67,7 +67,7 @@ License
 =======
 
 This project is licensed under the
-`MIT License <https://gitlab.com/padjana/padjana-startapp-django/blob/master/LICENSE>`_.
+`MIT License <https://gitlab.com/padjana/django-start-project/blob/master/LICENSE>`_.
 
 {% endcomment %}
 
