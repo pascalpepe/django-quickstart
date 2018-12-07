@@ -46,7 +46,7 @@ Usage
 `Install Django 1.11 <https://docs.djangoproject.com/en/1.11/topics/install/>`_
 and run the following command::
 
-    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/stable/1.1.x/django-project-template-stable-1.1.x.zip --extension py,rst,txt
+    django-admin startproject name [directory] --template https://gitlab.com/padjana/django-project-template/-/archive/stable/1.2.x/django-project-template-stable-1.2.x.zip --extension py,rst,txt
 
 For more information on the ``startproject`` command, see
 https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject

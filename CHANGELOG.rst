@@ -4,6 +4,18 @@ Changelog
 
 {% comment %}
 
+Version 1.2
+===========
+
+*2018-12-07*
+
+Changed
+-------
+
+* Use a single requirements file.
+
+----
+
 Version 1.1
 ===========
 
@@ -13,11 +25,6 @@ Added
 -----
 
 * Added paths to static and templates directories in common settings.
-
-Changed
--------
-
-* Renamed version-related variables from "dunder" format to constant variables.
 
 ----
 
