@@ -6,6 +6,21 @@ Padjana Start Django Project
 
 Project template for a quick start with Django framework.
 
+Status
+======
+
+.. image:: https://img.shields.io/badge/django-1.11%20|%202.1-blue.svg
+    :alt: django versions
+    :target: https://gitlab.com/padjana/padjana-startproject
+
+.. image:: https://img.shields.io/badge/python-3.4%20%7C%203.5%20%7C%203.6%20%7C%203.7-blue.svg
+    :alt: python versions
+    :target: https://gitlab.com/padjana/padjana-startproject
+
+.. image:: https://img.shields.io/badge/license-MIT-yellowgreen.svg
+    :alt: MIT license
+    :target: https://choosealicense.com/licenses/mit/
+
 Features
 ========
 
@@ -37,8 +52,8 @@ support/django111 1.11 LTS 3.4, 3.5, 3.6
 master            2.1      3.5, 3.6, 3.7
 ================= ======== =============
 
-It is recommended that you install the latest minor releases (A.B.C) available
-for your system.
+It is recommended that you install the latest patch/minor releases (A.B.C)
+available for your system.
 
 Usage
 =====
@@ -68,20 +83,17 @@ https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
 About Padjana
 =============
 
-**Padjana** offers a set of open-source projects, applications and tools
-developed with and for **Django**, all following the same guidelines and
-striving to be compatible with each other.
+**Padjana** offers free and open-source software built with and for the
+**Django** framework.
 
-Unless noted otherwise, each Django application developed by Padjana can be
-used individually and included seamlessly within existing Django projects.
-
-For more information, visit https://www.padjana.com.
+All Django applications developed by Padjana follow the same guidelines and
+design philosophy. For more information, visit https://www.padjana.com.
 
 License
 =======
 
-This project is licensed under the
-`MIT License <https://gitlab.com/padjana/padjana-startproject/blob/master/LICENSE>`_.
+This project is licensed under the MIT License.
+`Learn more <https://choosealicense.com/licenses/mit/>`_.
 
 {% endcomment %}
 
@@ -98,5 +110,5 @@ Django Python
 2.1    3.5, 3.6, 3.7
 ====== =============
 
-It is recommended that you install the latest minor releases (A.B.C) available
-for your system.
+It is recommended that you install the latest patch/minor releases (A.B.C)
+available for your system.
