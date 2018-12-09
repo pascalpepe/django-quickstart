@@ -4,6 +4,11 @@ Changelog
 
 {% comment %}
 
+Latest
+======
+
+* Change max line length to 99.
+
 Version 1.2
 ===========
 
