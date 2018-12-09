@@ -9,6 +9,7 @@ Latest
 
 * Change max line length to 99.
 * Change comment block message in ``README.rst`` and ``CHANGELOG.rst``
+* Add status badges in ``README.rst``.
 
 Version 1.2
 ===========
