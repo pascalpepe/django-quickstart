@@ -2,7 +2,7 @@
 Changelog
 =========
 
-{% comment %}
+{% comment "Content of this block will be ignored when starting your project." %}
 
 Version 2.2
 ===========

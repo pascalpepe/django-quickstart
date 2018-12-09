@@ -1,4 +1,4 @@
-{% comment %}
+{% comment "Content of this block will be ignored when starting your project." %}
 
 ============================
 Padjana Start Django Project
