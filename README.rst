@@ -6,6 +6,21 @@ Padjana Start Django Project
 
 Project template for a quick start with Django framework.
 
+Status
+======
+
+.. image:: https://img.shields.io/badge/django-1.11-blue.svg
+    :alt: django versions
+    :target: https://gitlab.com/padjana/padjana-startproject
+
+.. image:: https://img.shields.io/badge/python-3.4%20%7C%203.5%20%7C%203.6-blue.svg
+    :alt: python versions
+    :target: https://gitlab.com/padjana/padjana-startproject
+
+.. image:: https://img.shields.io/badge/license-MIT-yellowgreen.svg
+    :alt: MIT license
+    :target: https://choosealicense.com/licenses/mit/
+
 Features
 ========
 
@@ -35,8 +50,8 @@ Django   Python
 1.11 LTS 3.4, 3.5, 3.6
 ======== =============
 
-It is recommended that you install the latest minor releases (A.B.C) available
-for your system.
+It is recommended that you install the latest patch/minor releases (A.B.C)
+available for your system.
 
 Usage
 =====
@@ -52,14 +67,17 @@ https://docs.djangoproject.com/en/1.11/ref/django-admin/#startproject
 About Padjana
 =============
 
-**Padjana** offers a set of open-source projects, applications and tools
-developed with and for **Django**, all following the same guidelines and
-striving to be compatible with each other.
+**Padjana** offers free and open-source software built with and for the
+**Django** framework.
 
-Unless noted otherwise, each Django application developed by Padjana can be
-used individually and included seamlessly within existing Django projects.
+All Django applications developed by Padjana follow the same guidelines and
+design philosophy. For more information, visit https://www.padjana.com.
 
-For more information, visit https://www.padjana.com.
+License
+=======
+
+This project is licensed under the MIT License.
+`Learn more <https://choosealicense.com/licenses/mit/>`_.
 
 License
 =======
@@ -82,5 +100,5 @@ Django   Python
 1.11 LTS 3.4, 3.5, 3.6
 ======== =============
 
-It is recommended that you install the latest minor releases (A.B.C) available
-for your system.
+It is recommended that you install the latest patch/minor releases (A.B.C)
+available for your system.
