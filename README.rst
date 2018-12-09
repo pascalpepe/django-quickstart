@@ -79,12 +79,6 @@ License
 This project is licensed under the MIT License.
 `Learn more <https://choosealicense.com/licenses/mit/>`_.
 
-License
-=======
-
-This project is licensed under the
-`MIT License <https://gitlab.com/padjana/padjana-startproject/blob/master/LICENSE>`_.
-
 {% endcomment %}
 
 ==================
