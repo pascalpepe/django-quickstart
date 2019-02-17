@@ -19,7 +19,7 @@ Status
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :alt: MIT license
-    :target: https://choosealicense.com/licenses/mit/
+    :target: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
 
 Features
 ========
