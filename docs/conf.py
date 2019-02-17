@@ -6,7 +6,6 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-from datetime import date
 import os
 import sys
 
@@ -33,7 +32,7 @@ import {{ project_name }}  # noqa
 project = '{{ project_name }}'
 description = ''
 author = ''
-copyright = '{}, {}'.format(date.today().year, author)
+copyright = '2019 {}'.format(author)
 
 # The short X.Y version
 version = {{ project_name }}.__release_series__

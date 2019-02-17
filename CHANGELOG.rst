@@ -4,34 +4,37 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
-Latest
-======
+Version 2.3
+===========
 
-* Change max line length to 99.
-* Change comment block message in ``README.rst`` and ``CHANGELOG.rst``
-* Add status badges in ``README.rst``.
+2019-02-17
+
+* Reorganized settings in order to remove most environment variables and use a
+  secret file instead.
+* Changed GitLab CI configuration to run for all branches instead of only
+  master.
+* Upgraded psycopg2-binary to version 2.7.7.
+* Changed max line length to 99.
+* Changed comment block message in ``README.rst`` and ``CHANGELOG.rst``
+* Updated docs requirements file.
+* Changed copyright notice in docs configuration so as to use a fixed date.
+* Updated ``README.rst`` to reflect most of those changes.
 
 ----
 
 Version 2.2
 ===========
 
-*2018-12-07*
+2018-12-07
 
-Changed
--------
-
-* Use a single requirements file.
+* Reorganized the requirements in a single file.
 
 ----
 
 Version 2.1
 ===========
 
-*2018-12-05*
-
-Added
------
+2018-12-05
 
 * Added paths to static and templates directories in common settings.
 
@@ -40,19 +43,14 @@ Added
 Version 2.0
 ===========
 
-*2018-12-02*
+2018-12-02
 
 Supported Django and Python versions
 ------------------------------------
 
 * Starting from this release, the template is compatible with Django 2.1 only.
 * Support for Django 1.11 LTS is now carried out through the branch
-  `support/django111 <https://gitlab.com/padjana/padjana-startproject/tree/support/django111>`_.
-* Consequently,
-
-  - support for Python 3.4 is dropped,
-  - Python 3.7 is now supported.
-
+  **support/django111**.
 * The compatibility table is now:
 
   ================= ======== =============
@@ -66,16 +64,17 @@ Supported Django and Python versions
 Changed
 -------
 
-* Use new ``path`` function instead of ``url`` in URL configuration.
-* **tox** and **GitLab CI** configuration files have been changed to reflect
-  the changes in supported Python versions, as detailed above.
+* Changed the URL configuration to use the new ``path`` function instead of
+  ``url``.
+* Updated the **tox** and **GitLab CI** configuration files to reflect the
+  changes of supported Python versions, as detailed above.
 
 ----
 
 Version 1.0
 ===========
 
-*2018-12-02*
+2018-12-02
 
 Supported Django and Python versions
 ------------------------------------

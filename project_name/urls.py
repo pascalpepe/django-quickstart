@@ -29,7 +29,7 @@ urlpatterns = [
 # Internationalization
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/i18n/
 # from django.conf.urls.i18n import i18n_patterns
-# from django.utils.translation import gettext_lazy as _
+# from django.utils.translation import gettext_lazy as _
 # urlpatterns += i18n_patterns()
 
 # Serve files uploaded by users during development
