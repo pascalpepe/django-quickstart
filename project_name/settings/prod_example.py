@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ['.domain.tld']
 
 
 # Database
-# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -37,22 +37,22 @@ DATABASES = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-# EMAIL_HOST_USER = ''
-#
-# EMAIL_HOST_PASSWORD = ''
-#
-# EMAIL_HOST = ''
-#
-# EMAIL_PORT = 587
-#
-# EMAIL_USE_TLS = True
+EMAIL_HOST_USER = ''
+
+EMAIL_HOST_PASSWORD = ''
+
+EMAIL_HOST = ''
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
 
 
 # SSL/HTTPS
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/security/#ssl-https
 
-SECURE_SSL_REDIRECT = True
-
 CSRF_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
 
 SESSION_COOKIE_SECURE = True
