@@ -1,8 +1,11 @@
 *.py[co]
 __pycache__/
 
+# Secrets
+{{ project_name }}/settings/prod.py
+
 # Documentation
-/docs/_build/
+docs/_build/
 
 # Testing
 .tox/

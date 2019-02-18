@@ -15,31 +15,21 @@ py34:
   image: python:3.4
   script:
     - tox -e py34
-  only:
-    - master
 
 py35:
   image: python:3.5
   script:
     - tox -e py35
-  only:
-    - master
 
 py36:
   image: python:3.6
   script:
     - tox -e py36
-  only:
-    - master
 
 docs:
   script:
     - tox -e docs
-  only:
-    - master
 
 flake8:
   script:
     - tox -e flake8
-  only:
-    - master
