@@ -4,31 +4,40 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
-Latest
-======
+Version 1.3
+===========
 
-* Change max line length to 99.
-* Change comment block message in ``README.rst`` and ``CHANGELOG.rst``
-* Add status badges in ``README.rst``.
+2019-02-18
+
+* Reorganized settings in order to remove most environment variables and use a
+  secret file instead.
+* Changed GitLab CI configuration to run for all branches instead of only
+  master.
+* Upgraded psycopg2-binary to version 2.7.7.
+* Changed max line length to 99.
+* Changed comment block message in README.rst and CHANGELOG.rst
+* Updated docs requirements file.
+* Changed copyright notice in docs configuration so as to use a fixed date.
+* Updated README.rst to reflect most of those changes.
 
 ----
 
 Version 1.2
 ===========
 
-*2018-12-07*
+2018-12-07
 
 Changed
 -------
 
-* Use a single requirements file.
+* Reorganized the requirements in a single file.
 
 ----
 
 Version 1.1
 ===========
 
-*2018-12-05*
+2018-12-05
 
 Added
 -----
@@ -40,7 +49,7 @@ Added
 Version 1.0
 ===========
 
-*2018-12-02*
+2018-12-02
 
 Supported Django and Python versions
 ------------------------------------
@@ -54,7 +63,7 @@ Django   Python
 Initial features
 ----------------
 
-* **PostgreSQL** as default database backend.
+* **PostgreSQL** as default database engine.
 * Loading sensible settings values (e.g. secret key, database password) from
   environment variables.
 * Different settings for multiple deployment environments (e.g. development,
