@@ -134,4 +134,4 @@ ADMINS = [
     ('John Smith', 'john.smith@domain.tld'),
 ]
 
-SERVER_EMAIL = 'root@domain.tld'
+SERVER_EMAIL = 'no-reply@domain.tld'

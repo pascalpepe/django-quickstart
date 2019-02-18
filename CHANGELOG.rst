@@ -4,6 +4,16 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
+Latest
+======
+
+* Fixed the docs version in settings. Some docstrings were written with "2.1"
+  instead of the template variable.
+* Changed the ``SERVER_EMAIL`` setting to ``no-reply@`` instead of ``root@``.
+* Uncommented the email settings in the production example.
+
+---
+
 Version 2.3
 ===========
 
