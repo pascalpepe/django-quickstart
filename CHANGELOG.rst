@@ -10,9 +10,11 @@ Latest
 * Fixed the docs version in settings. Some docstrings were written with "2.1"
   instead of the template variable.
 * Changed the ``SERVER_EMAIL`` setting to ``no-reply@`` instead of ``root@``.
-* Uncommented the email settings in the production example.
+* Uncommented the email settings in the production settings example.
+* Changed the default database host in the production settings example to
+  ``127.0.0.1`` instead of an empty string.
 
----
+----
 
 Version 2.3
 ===========
