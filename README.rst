@@ -9,7 +9,7 @@ Project template for a quick start with Django framework.
 Status
 ======
 
-.. image:: https://img.shields.io/badge/django-2.1-blue.svg
+.. image:: https://img.shields.io/badge/django-2.2-blue.svg
     :alt: django versions
     :target: https://gitlab.com/pascalpepe/django-quickstart
 
@@ -46,7 +46,7 @@ Supported Django and Python versions
 ======== =============
 Django   Python
 ======== =============
-2.1      3.5, 3.6, 3.7
+2.2      3.5, 3.6, 3.7
 ======== =============
 
 It is recommended that you install the latest patch/minor releases (A.B.C)
@@ -55,18 +55,18 @@ available on your system for both Django and Python.
 Usage
 =====
 
-1. `Install Django 2.1 <https://docs.djangoproject.com/en/2.1/topics/install/>`_.
+1. `Install Django 2.2 <https://docs.djangoproject.com/en/2.2/topics/install/>`_.
 2. Start a new Django project (replace the project ``name`` and its optional
    destination ``directory`` as you see fit)::
 
      django-admin startproject name [directory] --template https://gitlab.com/pascalpepe/django-quickstart/-/archive/master/django-quickstart-master.zip --extension py,rst,txt --name .gitignore
 
-For more information on the ``startproject`` command, see https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
+For more information on the ``startproject`` command, see https://docs.djangoproject.com/en/2.2/ref/django-admin/#startproject
 
 License
 =======
 
-This project is licensed under the `MIT License <https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE>`_
+This project is licensed under the `MIT License <https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE>`_.
 
 {% endcomment %}
 
@@ -80,7 +80,7 @@ Supported Django and Python versions
 ====== =============
 Django Python
 ====== =============
-2.1    3.5, 3.6, 3.7
+2.2    3.5, 3.6, 3.7
 ====== =============
 
 It is recommended that you install the latest patch/minor releases (A.B.C)

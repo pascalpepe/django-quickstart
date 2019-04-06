@@ -4,8 +4,24 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
-Latest
-======
+Version 3.0
+===========
+
+Supported Django and Python versions
+------------------------------------
+
+* Starting from this release, the template is compatible with Django 2.2 only.
+* Support for Django 1.11 (old LTS) and Django 2.1 is dropped.
+* The compatibility table is now:
+
+  ================= ======== =============
+  Branch            Django   Python
+  ================= ======== =============
+  master            2.2      3.5, 3.6, 3.7
+  ================= ======== =============
+
+Changed
+-------
 
 * Fixed the docs version in settings. Some docstrings were written with "2.1"
   instead of the template variable.
