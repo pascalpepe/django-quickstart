@@ -7,6 +7,8 @@ Changelog
 Version 3.0
 ===========
 
+2019-04-06
+
 Supported Django and Python versions
 ------------------------------------
 
@@ -29,6 +31,7 @@ Changed
 * Uncommented the email settings in the production settings example.
 * Changed the default database host in the production settings example to
   ``127.0.0.1`` instead of an empty string.
+* Updated ``README.rst`` to reflect the Django upgrade.
 
 ----
 
