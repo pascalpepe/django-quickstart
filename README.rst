@@ -66,7 +66,7 @@ For more information on the ``startproject`` command, see https://docs.djangopro
 License
 =======
 
-This project is licensed under the `MIT License <https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE>`_
+This project is licensed under the `MIT License <https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE>`_.
 
 {% endcomment %}
 
