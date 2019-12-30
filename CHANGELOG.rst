@@ -4,6 +4,15 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
+Version 3.1
+===========
+
+In development.
+
+* Updated psycopg2-binary to version 2.8.4.
+
+----
+
 Version 3.0
 ===========
 
