@@ -5,7 +5,7 @@ Before deploying your Django project, see
 https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 """
 
-from .common import *  # noqa
+from .base import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!

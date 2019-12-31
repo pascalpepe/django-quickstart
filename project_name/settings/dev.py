@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 
 import os
 
-from .common import *  # noqa
+from .base import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
