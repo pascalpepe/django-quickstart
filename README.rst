@@ -34,8 +34,6 @@ Features
 * Storage and deployment of static files (assuming that static files are served
   from the same server as the site).
 * Enforced site-wide HTTPS in production environment.
-* **Sphinx** documentation initialized with a changelog file and using the
-  theme sphinx-rtd-theme.
 * Code quality checks with **flake8**.
 * Automated testing with **tox**.
 * Continuous integration with **GitLab CI**.

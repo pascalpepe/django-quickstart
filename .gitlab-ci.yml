@@ -26,10 +26,6 @@ py37:
   script:
     - tox -e py37
 
-docs:
-  script:
-    - tox -e docs
-
 flake8:
   script:
     - tox -e flake8

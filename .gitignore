@@ -4,8 +4,5 @@ __pycache__/
 # Secrets
 {{ project_name }}/settings/prod.py
 
-# Documentation
-docs/_build/
-
 # Testing
 .tox/
