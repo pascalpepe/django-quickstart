@@ -13,6 +13,24 @@ In development.
 * Moved flake8 config from ``setup.cfg`` to ``tox.ini``.
 * Renamed ̀``settings/common.py`` as ``settings/base.py``.
 * Removed the empty Sphinx docs.
+* Moved local static files to:
+
+  - ``/.local/`` during development (the directory is ignored by version
+    control).
+  - a ``DATA_DIR`` environment variable in production.
+
+* Moved project-level templates, static files and locale files to the root
+  directory.
+* Added custom pages for the following errors:
+
+  - 400 Bad Request
+  - 403 Forbidden
+  - 404 Not Found
+  - 500 Internal Server Error
+
+* Added URL paths so as to be able to browse error pages during development.
+* Added URL path to serve files uploaded by users (i.e. ``/.local/media/``)
+  during development
 
 ----
 
