@@ -7,6 +7,3 @@ __pycache__/
 
 # Local data files
 .local/
-
-# Secrets
-{{ project_name }}/settings/prod.py

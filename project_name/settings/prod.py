@@ -5,16 +5,20 @@ Before deploying your Django project, see
 https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 """
 
+import os
+
 from .base import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'keepItSecret!'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.domain.tld']
+ALLOWED_HOSTS = [
+    '.domain.tld',
+]
 
 
 # Database
@@ -23,11 +27,11 @@ ALLOWED_HOSTS = ['.domain.tld']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': os.environ.get('DATABASE_NAME', ''),
+        'USER': os.environ.get('DATABASE_USER', ''),
+        'PASSWORD': os.environ['DATABASE_PASSWORD'],
+        'HOST': os.environ.get('DATABASE_HOST', '127.0.0.1'),
+        'PORT': os.environ.get('DATABASE_PORT', '5432'),
     }
 }
 
@@ -47,17 +51,11 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 # Sending email
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = os.environ.get('EMAIL_HOST', ''),
 
-EMAIL_HOST_USER = ''
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', ''),
 
-EMAIL_HOST_PASSWORD = ''
-
-EMAIL_HOST = ''
-
-EMAIL_PORT = 587
-
-EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 
 
 # SSL/HTTPS

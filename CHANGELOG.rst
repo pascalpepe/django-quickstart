@@ -31,6 +31,8 @@ In development.
 * Added URL paths so as to be able to browse error pages during development.
 * Added URL path to serve files uploaded by users (i.e. ``/.local/media/``)
   during development
+* Reorganized settings in order to use environment variables instead of secret
+  files.
 
 ----
 

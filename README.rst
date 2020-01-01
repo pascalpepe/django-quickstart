@@ -25,8 +25,8 @@ Features
 ========
 
 * **PostgreSQL** as default database engine.
-* Hide sensible settings (e.g. secret key, database password) with a secret
-  file.
+* Hide sensible settings (e.g. secret key, database password) with
+  environment variables.
 * Different settings for multiple deployment environments (e.g. development,
   staging, production).
 * Ready for internationalization.
