@@ -51,11 +51,24 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 # Sending email
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
 
+DEFAULT_FROM_EMAIL = 'no-reply@domain.tld'
+
 EMAIL_HOST = os.environ.get('EMAIL_HOST', ''),
 
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', ''),
 
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+
+
+# Error reporting
+# https://docs.djangoproject.com/en/{{ docs_version }}/howto/error-reporting/
+
+ADMINS = [
+    ('Jane Smith', 'jane.smith@domain.tld'),
+    ('John Smith', 'john.smith@domain.tld'),
+]
+
+SERVER_EMAIL = 'no-reply@domain.tld'
 
 
 # SSL/HTTPS

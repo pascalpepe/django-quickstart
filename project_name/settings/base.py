@@ -76,16 +76,20 @@ AUTH_USER_MODEL = 'accounts.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -122,20 +126,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/dist'),
 ]
-
-
-# Sending email
-# https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
-
-DEFAULT_FROM_EMAIL = 'no-reply@domain.tld'
-
-
-# Error reporting
-# https://docs.djangoproject.com/en/{{ docs_version }}/howto/error-reporting/
-
-ADMINS = [
-    ('Jane Smith', 'jane.smith@domain.tld'),
-    ('John Smith', 'john.smith@domain.tld'),
-]
-
-SERVER_EMAIL = 'no-reply@domain.tld'
