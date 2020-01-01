@@ -21,7 +21,7 @@ Changed settings
 This update contains many changes in settings and a reorganization of the
 project layout.
 
-* Renamed ̀``settings/common.py`` as ``settings/base.py``.
+* Renamed ``settings/common.py`` as ``settings/base.py``.
 * Reorganized settings in order to use environment variables instead of secret
   files.
 * Moved email-based error-reporting settings to ``settings/prod.py``.
