@@ -1,8 +1,12 @@
-*.py[co]
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
+
+# Unit test / coverage reports
+.tox/
+
+# Local data files
+.local/
 
 # Secrets
 {{ project_name }}/settings/prod.py
-
-# Testing
-.tox/

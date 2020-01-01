@@ -36,6 +36,16 @@ DATABASES = {
 }
 
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+DATA_DIR = os.path.join(BASE_DIR, '.local')  # noqa
+
+MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
+
+STATIC_ROOT = os.path.join(DATA_DIR, 'static')
+
+
 # Sending email
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
 

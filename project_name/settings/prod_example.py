@@ -32,6 +32,18 @@ DATABASES = {
 }
 
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+DATA_DIR = os.environ['DATA_DIR']
+
+MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
+
+STATIC_ROOT = os.path.join(DATA_DIR, 'static')
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # noqa
+
+
 # Sending email
 # https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
 
