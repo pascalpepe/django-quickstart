@@ -4,6 +4,67 @@ Changelog
 
 {% comment "Content of this block will be ignored when starting your project." %}
 
+Version 3.1
+===========
+
+2020-01-01
+
+Dependencies updates
+--------------------
+
+* Updated psycopg2-binary to version 2.8.4.
+* Changed the default Python image to version 3.7 in GitLab CI.
+
+Changed settings
+----------------
+
+This update contains many changes in settings and a reorganization of the
+project layout.
+
+* Renamed ``settings/common.py`` as ``settings/base.py``.
+* Reorganized settings in order to use environment variables instead of secret
+  files.
+* Moved email-based error-reporting settings to ``settings/prod.py``.
+* Moved flake8 config from ``setup.cfg`` to ``tox.ini``.
+* Changed max line length to 79 (default flake8 value).
+* Moved local static files:
+
+  - to ``/.local/`` during development (this directory is ignored by version
+    control).
+  - using a ``DATA_DIR`` environment variable in production.
+
+* Moved project-level templates, static files and locale files to the root
+  directory.
+
+New features
+------------
+
+* Added custom pages for the following errors:
+
+  - 400 Bad Request
+  - 403 Forbidden
+  - 404 Not Found
+  - 500 Internal Server Error
+
+* Added URL paths so as to be able to browse error pages during development.
+* Added URL path to serve files uploaded by users (i.e. ``/.local/media/``)
+  during development
+
+New application: Accounts
+-------------------------
+
+* Started the Accounts application.
+* Added a custom user model. This model behaves identically to the default user
+  model, but we will be able to customize it in the future if the need arises.
+
+Removed
+-------
+
+* Removed the Sphinx docs entirely as it contained little to no customization
+  from the default ``sphinx-quickstart`` command.
+
+----
+
 Version 3.0
 ===========
 
@@ -12,14 +73,15 @@ Version 3.0
 Supported Django and Python versions
 ------------------------------------
 
-* Starting from this release, the template is compatible with Django 2.2 only.
+* Starting from this release, the template is compatible with Django 2.2 only
+  (new LTS).
 * Support for Django 1.11 (old LTS) and Django 2.1 is dropped.
 * The compatibility table is now:
 
   ================= ======== =============
   Branch            Django   Python
   ================= ======== =============
-  master            2.2      3.5, 3.6, 3.7
+  master            2.2 LTS  3.5, 3.6, 3.7
   ================= ======== =============
 
 Changed

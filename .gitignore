@@ -1,11 +1,9 @@
-*.py[co]
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
 
-# Secrets
-{{ project_name }}/settings/prod.py
-
-# Documentation
-docs/_build/
-
-# Testing
+# Unit test / coverage reports
 .tox/
+
+# Local data files
+.local/

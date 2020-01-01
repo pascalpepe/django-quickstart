@@ -9,11 +9,11 @@ https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 
 import os
 
-from .common import *  # noqa
+from .base import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'not-safe-for-prod')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,6 +34,16 @@ DATABASES = {
         'PORT': os.environ.get('DATABASE_PORT', '5432'),
     }
 }
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+DATA_DIR = os.path.join(BASE_DIR, '.local')  # noqa
+
+MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
+
+STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
 
 # Sending email
