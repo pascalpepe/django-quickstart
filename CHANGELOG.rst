@@ -36,6 +36,7 @@ In development.
 * Started the Accounts application.
 * Added a custom user model. This model behaves identically to the default user
   model, but we will be able to customize it in the future if the need arises.
+* Changed the default Python image to version 3.7 in GitLab CI.
 
 ----
 
