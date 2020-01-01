@@ -71,7 +71,7 @@ Usage
    For more information on the ``startproject`` command, see https://docs.djangoproject.com/en/2.2/ref/django-admin/#startproject
 3. Configure your project:
 
-   * Set ̀``TIME_ZONE`` to your time zone in ``settings/base.py``.
+   * Set ``TIME_ZONE`` to your time zone in ``settings/base.py``.
    * Set your database credentials with environment variables as defined in
      ``settings/dev.py``.
 
