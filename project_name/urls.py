@@ -20,6 +20,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
+    path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 )
 

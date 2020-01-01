@@ -33,6 +33,9 @@ In development.
   during development
 * Reorganized settings in order to use environment variables instead of secret
   files.
+* Started the Accounts application.
+* Added a custom user model. This model behaves identically to the default user
+  model, but we will be able to customize it in the future if the need arises.
 
 ----
 

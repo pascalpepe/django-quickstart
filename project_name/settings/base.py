@@ -23,6 +23,9 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 INSTALLED_APPS = [
+    # Local apps
+    'accounts.apps.AccountsConfig',
+    # Django built-in apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,8 +69,10 @@ TEMPLATES = [
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 
-# Password validation
-# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#auth-password-validators
+# Authentication
+# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#auth
+
+AUTH_USER_MODEL = 'accounts.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
