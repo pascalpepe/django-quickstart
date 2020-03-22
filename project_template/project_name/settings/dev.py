@@ -1,10 +1,6 @@
-"""
-Development settings for {{ project_name }} project.
+"""Development settings for {{ project_name|capfirst }}.
 
-Quick-start development settings - unsuitable for production
-
-Before deploying your Django project, see
-https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
+Unsuitable for production.
 """
 
 import os
@@ -37,7 +33,7 @@ DATABASES = {
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+# https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 
 DATA_DIR = os.path.join(BASE_DIR, '.local')  # noqa
 

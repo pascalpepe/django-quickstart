@@ -1,7 +1,7 @@
-"""
-WSGI configuration for {{ project_name }} project.
+"""WSGI configuration for {{ project_name|capfirst }}.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+It exposes the WSGI callable as a module-level variable named
+``application``.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/wsgi/

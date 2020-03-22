@@ -1,7 +1,6 @@
-"""
-Production settings for {{ project_name }} project.
+"""Production settings for {{ project_name|capfirst }}.
 
-Before deploying your Django project, see
+Before deploying, see
 https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 """
 
@@ -37,7 +36,7 @@ DATABASES = {
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+# https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 
 DATA_DIR = os.environ['DATA_DIR']
 
