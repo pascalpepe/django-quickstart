@@ -3,18 +3,7 @@ before_script:
 
 image: python:3.7
 
-py35:
-  image: python:3.5
-  script:
-    - tox -e py35
-
-py36:
-  image: python:3.6
-  script:
-    - tox -e py36
-
 py37:
-  image: python:3.7
   script:
     - tox -e py37
 
