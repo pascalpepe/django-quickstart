@@ -1,9 +1,5 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
 *.pyc
-
-# Unit test / coverage reports
-.tox/
-
-# Local data files
 .local/
+.tox/
+__pycache__/
+db.sqlite3
