@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 LOCAL_APPS = [
-    'accounts.apps.AccountsConfig',
+    '{{ project_name }}.accounts.apps.AccountsConfig',
 ]
 
 THIRD_PARTY_APPS = []

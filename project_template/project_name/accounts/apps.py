@@ -7,5 +7,5 @@ from django.utils.translation import gettext_lazy as _
 class AccountsConfig(AppConfig):
     """Accounts application configuration."""
 
-    name = 'accounts'
+    name = '{{ project_name }}.accounts'
     verbose_name = _('Accounts')
