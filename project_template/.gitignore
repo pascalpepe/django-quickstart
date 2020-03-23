@@ -1,5 +1,45 @@
-*.pyc
-.local/
-.tox/
+# Byte-compiled / optimized / DLL files
+*.py[cod]
 __pycache__/
+
+# Unit test / coverage reports
+.cache/
+.coverage
+.coverage.*
+.tox/
+coverage.xml
+htmlcov/
+
+# Translations
+*.mo
+*.pot
+
+# Django
+*.log
+.data/
 db.sqlite3
+
+# Sphinx
+/docs/_build/
+
+# Node
+node_modules/
+
+# Environments
+.env
+.venv
+ENV/
+env/
+env.bak/
+venv/
+venv.bak/
+
+# JetBrains IDEs
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Visual Studio Code
+.vscode/
