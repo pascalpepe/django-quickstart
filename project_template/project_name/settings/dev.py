@@ -31,7 +31,7 @@ DATABASES = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 
-DATA_DIR = os.path.join(BASE_DIR, '.local')  # noqa
+DATA_DIR = os.path.join(BASE_DIR, '.data')  # noqa
 
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
 
