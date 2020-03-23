@@ -5,7 +5,7 @@ Unsuitable for production.
 
 import os
 
-from .base import *  # noqa
+from {{ project_name }}.settings.base import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
