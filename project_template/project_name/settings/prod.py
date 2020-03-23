@@ -70,11 +70,11 @@ ADMINS = [
 SERVER_EMAIL = 'no-reply@domain.tld'
 
 
-# SSL/HTTPS
-# https://docs.djangoproject.com/en/{{ docs_version }}/topics/security/#ssl-https
+# Security
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/security/
+
+CSRF_COOKIE_HTTPONLY = True
 
 CSRF_COOKIE_SECURE = True
-
-SECURE_SSL_REDIRECT = True
 
 SESSION_COOKIE_SECURE = True
