@@ -2,26 +2,23 @@
 Django Quick Start
 ==================
 
-.. image:: https://img.shields.io/badge/django-2.2-blue.svg
-    :alt: django versions
-    :target: https://gitlab.com/pascalpepe/django-quickstart
+.. image:: https://img.shields.io/badge/django-2.2-092e20
+   :alt: Django 2.2
+   :target: https://gitlab.com/pascalpepe/django-quickstart
 
-.. image:: https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue.svg
-    :alt: python versions
-    :target: https://gitlab.com/pascalpepe/django-quickstart
+.. image:: https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7%20|%203.8-3776ab
+   :alt: Python 3.5, 3.6, 3.7, 3.8
+   :target: https://gitlab.com/pascalpepe/django-quickstart
 
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :alt: MIT license
-    :target: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
+.. image:: https://img.shields.io/badge/license-MIT-green
+   :alt: MIT License
+   :target: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
 
 Project template for a quick start with Django framework.
 
-----
+:Source code: https://gitlab.com/pascalpepe/django-quickstart
+:Issue tracker: https://gitlab.com/pascalpepe/django-quickstart/issues
 
-* **Source code**: https://gitlab.com/pascalpepe/django-quickstart
-* **Issue tracker**: https://gitlab.com/pascalpepe/django-quickstart/issues
-
-----
 
 Project template overview
 =========================
@@ -38,8 +35,8 @@ Project template overview
 * Continuous integration with **GitLab CI**.
 
 
-Supported Django and Python versions
-====================================
+Supported versions of Django and Python
+=======================================
 
 This project aims at supporting the latest LTS version of Django.
 
