@@ -2,9 +2,6 @@
 Django Quick Start
 ==================
 
-Project template for a quick start with Django framework.
-
-
 .. image:: https://img.shields.io/badge/django-2.2-blue.svg
     :alt: django versions
     :target: https://gitlab.com/pascalpepe/django-quickstart
@@ -17,6 +14,8 @@ Project template for a quick start with Django framework.
     :alt: MIT license
     :target: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
 
+Project template for a quick start with Django framework.
+
 ----
 
 * **Source code**: https://gitlab.com/pascalpepe/django-quickstart
@@ -24,61 +23,64 @@ Project template for a quick start with Django framework.
 
 ----
 
-Features
-========
+Project template overview
+=========================
 
-* **PostgreSQL** as default database engine.
-* Sensible settings (e.g. secret key, database password) loaded from
+* Django settings are split into environment-specific modules (e.g.
+  development, staging, production).
+* Sensitive settings (e.g. secret key, database password) are loaded from
   environment variables.
-* Split settings for multiple deployment environments (e.g. development,
-  staging, production).
-* Ready for internationalization.
-* Custom user model set from the start (identical to the default user model).
-* Storage and deployment of static files (assuming that static files are served
-  from the same server as the site).
-* Enforced site-wide HTTPS in a production environment.
-* Settings for error reporting.
+* PostgreSQL is set as the default database engine in production.
+* A custom user model is already set up (it behaves identically to the default
+  user model).
 * Code quality checks with **flake8**.
 * Automated testing with **tox**.
 * Continuous integration with **GitLab CI**.
+
 
 Supported Django and Python versions
 ====================================
 
 This project aims at supporting the latest LTS version of Django.
 
-======== =============
-Django   Python
-======== =============
-2.2 LTS  3.5, 3.6, 3.7
-======== =============
+======= ===================================
+Django  Python
+======= ===================================
+2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
+======= ===================================
 
-It is recommended that you install the latest patch/minor releases (A.B.C)
-available on your system for both Django and Python.
+For each version of Python, it is recommended that you install the latest
+micro release (A.B.C) available on your system.
 
-Usage
-=====
+For Django, the latest LTS micro release (2.2.x) is recommended.
+
+
+Quick usage guide
+=================
 
 1. `Install Django 2.2 <https://docs.djangoproject.com/en/2.2/topics/install/>`_
    (preferably within a Python 3 virtual environment).
-2. Start a new Django project (replace the project ``name`` and its optional
+
+2. Get the project template::
+
+     git clone https://gitlab.com/pascalpepe/django-quickstart.git
+
+3. Start a new Django project (replace the project ``name`` and its optional
    destination ``directory`` as you see fit)::
 
-     django-admin startproject name [directory] --template https://gitlab.com/pascalpepe/django-quickstart/-/archive/master/django-quickstart-master.zip --extension py,rst,txt
+     django-admin startproject name [directory] --template ./django-quickstart/project_template/ --extension py,rst,txt
 
    For more information on the ``startproject`` command, see https://docs.djangoproject.com/en/2.2/ref/django-admin/#startproject
-3. Configure your project:
-
-   * Set ``TIME_ZONE`` to your time zone in ``settings/base.py``.
-   * Set your database credentials with environment variables as defined in
-     ``settings/dev.py``.
 
 4. Initialize your database::
 
-     python manage.py makemigrations accounts
+     python manage.py makemigrations
      python manage.py migrate
 
-5. You are all set and ready to work on your new project.
+5. You are all set and ready to start working on your new project::
+
+     python manage.py runserver
+
 
 License
 =======

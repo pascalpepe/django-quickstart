@@ -2,7 +2,12 @@
 Changelog
 =========
 
-{% comment "Content of this block will be ignored when starting your project." %}
+Latest
+======
+
+* ..
+
+----
 
 Version 3.1
 ===========
@@ -197,5 +202,3 @@ Initial features
 * Code quality checks with **flake8**.
 * Automated testing with **tox**.
 * **GitLab CI** configuration.
-
-{% endcomment %}
