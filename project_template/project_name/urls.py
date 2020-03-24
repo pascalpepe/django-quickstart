@@ -12,10 +12,9 @@ from django.urls import include, path
 
 
 urlpatterns = [
-    path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('{{ project_name }}.home.urls')),
     path('admin/', admin.site.urls),
 ]
-
 
 if settings.DEBUG:
     from django.conf.urls.static import static
