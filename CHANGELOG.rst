@@ -7,7 +7,6 @@ Latest
 
 * ..
 
-----
 
 Version 3.1
 ===========
@@ -18,7 +17,8 @@ Dependencies updates
 --------------------
 
 * Updated psycopg2-binary to version 2.8.4.
-* Changed the default Python image to version 3.7 in GitLab CI.
+* Changed the default Python image to version 3.7 in GitLab CI. Python 3.7 is
+  the default version available in Debian stable (10, Buster).
 
 Changed settings
 ----------------
@@ -41,8 +41,8 @@ project layout.
 * Moved project-level templates, static files and locale files to the root
   directory.
 
-New features
-------------
+New
+---
 
 * Added custom pages for the following errors:
 
@@ -60,34 +60,34 @@ New application: Accounts
 
 * Started the Accounts application.
 * Added a custom user model. This model behaves identically to the default user
-  model, but we will be able to customize it in the future if the need arises.
+  model, but it will be easier to customize it in the future if the need
+  arises.
 
 Removed
 -------
 
-* Removed the Sphinx docs entirely as it contained little to no customization
-  from the default ``sphinx-quickstart`` command.
+* Removed the Sphinx docs entirely from the project template, as it contained
+  little to no customization from the default ``sphinx-quickstart`` command.
 
-----
 
 Version 3.0
 ===========
 
 2019-04-06
 
-Supported Django and Python versions
-------------------------------------
+Supported versions of Django and Python
+---------------------------------------
 
 * Starting from this release, the template is compatible with Django 2.2 only
   (new LTS).
 * Support for Django 1.11 (old LTS) and Django 2.1 is dropped.
 * The compatibility table is now:
 
-  ================= ======== =============
-  Branch            Django   Python
-  ================= ======== =============
-  master            2.2 LTS  3.5, 3.6, 3.7
-  ================= ======== =============
+  ====== ======= =============
+  Branch Django  Python
+  ====== ======= =============
+  master 2.2 LTS 3.5, 3.6, 3.7
+  ====== ======= =============
 
 Changed
 -------
@@ -95,12 +95,11 @@ Changed
 * Fixed the docs version in settings. Some docstrings were written with "2.1"
   instead of the template variable.
 * Changed the ``SERVER_EMAIL`` setting to ``no-reply@`` instead of ``root@``.
-* Uncommented the email settings in the production settings example.
-* Changed the default database host in the production settings example to
-  ``127.0.0.1`` instead of an empty string.
+* Uncommented all email settings in the production example.
+* Changed the default database host in the production example to ``127.0.0.1``
+  instead of an empty string.
 * Updated ``README.rst`` to reflect the Django upgrade.
 
-----
 
 Version 2.3
 ===========
@@ -111,14 +110,13 @@ Version 2.3
   secret file instead.
 * Changed GitLab CI configuration to run for all branches instead of only
   master.
-* Upgraded psycopg2-binary to version 2.7.7.
+* Updated psycopg2-binary to version 2.7.7.
 * Changed max line length to 99.
 * Changed comment block message in ``README.rst`` and ``CHANGELOG.rst``
 * Updated docs requirements file.
 * Changed copyright notice in docs configuration so as to use a fixed date.
 * Updated ``README.rst`` to reflect most of those changes.
 
-----
 
 Version 2.2
 ===========
@@ -127,7 +125,6 @@ Version 2.2
 
 * Reorganized the requirements in a single file.
 
-----
 
 Version 2.1
 ===========
@@ -136,19 +133,18 @@ Version 2.1
 
 * Added paths to static and templates directories in common settings.
 
-----
 
 Version 2.0
 ===========
 
 2018-12-02
 
-Supported Django and Python versions
-------------------------------------
+Supported versions of Django and Python
+---------------------------------------
 
 * Starting from this release, the template is compatible with Django 2.1 only.
 * Support for Django 1.11 LTS is now carried out through the branch
-  **support/django111**.
+  ``support/django111``.
 * The compatibility table is now:
 
   ================= ======== =============
@@ -164,18 +160,17 @@ Changed
 
 * Changed the URL configuration to use the new ``path`` function instead of
   ``url``.
-* Updated the **tox** and **GitLab CI** configuration files to reflect the
-  changes of supported Python versions, as detailed above.
+* Updated tox and GitLab CI configuration files to reflect the changes of
+  supported Python versions, as detailed above.
 
-----
 
 Version 1.0
 ===========
 
 2018-12-02
 
-Supported Django and Python versions
-------------------------------------
+Supported versions of Django and Python
+---------------------------------------
 
 ======== =============
 Django   Python
@@ -186,8 +181,8 @@ Django   Python
 Initial features
 ----------------
 
-* **PostgreSQL** as default database backend.
-* Loading sensible settings values (e.g. secret key, database password) from
+* PostgreSQL as default database backend.
+* Loading sensitive settings values (e.g. secret key, database password) from
   environment variables.
 * Different settings for multiple deployment environments (e.g. development,
   production).
@@ -197,8 +192,8 @@ Initial features
 * Storage and deployment of static files (assuming that static files are served
   from the same server as the site).
 * Enforced site-wide HTTPS in production environment.
-* **Sphinx** documentation initialized with a changelog file and using the
+* Sphinx documentation initialized with a changelog file and using the
   theme sphinx-rtd-theme.
-* Code quality checks with **flake8**.
-* Automated testing with **tox**.
-* **GitLab CI** configuration.
+* Code quality checks with flake8.
+* Automated testing with tox.
+* GitLab CI configuration.
