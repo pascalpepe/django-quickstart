@@ -35,7 +35,8 @@ DJANGO_APPS = [
 
 INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DJANGO_APPS
 
-# Use the SecurityMiddleware if you cannot use your Web server instead.
+# Use the SecurityMiddleware and XFrameOptionsMiddleware only if you cannot
+# get their functionalities from your Web server instead.
 # https://docs.djangoproject.com/en/{{ docs_version }}/ref/middleware/
 MIDDLEWARE = [
     # 'django.middleware.security.SecurityMiddleware',
@@ -44,6 +45,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    # 'django.middleware.security.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = '{{ project_name }}.urls'
