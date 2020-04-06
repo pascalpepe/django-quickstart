@@ -1,9 +1,9 @@
 [flake8]
 exclude =
-    .git,
-    .tox,
-    __pycache__,
-    migrations,
-    node_modules,
+    .git
+    .tox
+    __pycache__
+    migrations
+    node_modules
 max-complexity = 10
 max-line-length = 79
