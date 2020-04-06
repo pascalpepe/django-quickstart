@@ -1,4 +1,4 @@
-{% load i18n static %}<!DOCTYPE html>{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>{% load i18n static %}{% get_current_language as LANGUAGE_CODE %}
 <html lang="{{ LANGUAGE_CODE|default:'en-us' }}">
     <head>
         <meta charset="utf-8">
@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
         {% endblock %}
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% block title %}Starter{% endblock %}</title>
     </head>
     <body>
         {% block header %}
-        <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm" role="navigation">{% url 'home' as home_url %}
-            <div class="container">
-                <a class="navbar-brand" href="{{ home_url }}">Django Quick Start</a>
+        <header class="navbar navbar-expand-md navbar-light bg-white border-bottom" role="navigation">{% url 'home' as home_url %}
+            <div class="container-xl">
+                <a class="navbar-brand" href="{{ home_url }}">Starter</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,7 +55,7 @@
         {% endblock %}
 
         {% block footer %}
-        <footer class="container py-3 py-md-4 text-muted small">
+        <footer class="container-xl py-3 py-md-4 text-muted">
             <hr>
             Copyright &copy; 2018-2020 Example
         </footer>
