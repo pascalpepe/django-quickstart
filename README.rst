@@ -86,12 +86,16 @@ Quick usage guide
    For more information, refer to the official documentation on
    `using the startproject command`_.
 
-4. Initialize your database::
+4. Install requirements::
+
+     pip install -r requirements/dev.txt
+
+5. Initialize the database::
 
      python manage.py makemigrations
      python manage.py migrate
 
-5. You are all set and ready to start working on your new project::
+6. Run the development server and visit http://localhost:8000::
 
      python manage.py runserver
 
@@ -114,7 +118,7 @@ This project is licensed under the `MIT License`_.
 .. _tox: https://tox.readthedocs.io
 .. _`coverage.py`: https://coverage.readthedocs.io
 .. _flake8: https://flake8.readthedocs.io
-.. _`django-debug_toolbar`: https://django-debug-toolbar.readthedocs.io
+.. _`django-debug-toolbar`: https://django-debug-toolbar.readthedocs.io
 .. _`GitLab CI`: https://docs.gitlab.com/ee/ci/README.html
 .. _`Install Django 2.2`: https://docs.djangoproject.com/en/2.2/topics/install/
 .. _`Python virtual environment`: https://docs.python.org/3/library/venv.html
