@@ -35,7 +35,10 @@ DJANGO_APPS = [
 
 INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DJANGO_APPS
 
+# Use the SecurityMiddleware if you cannot use your Web server instead.
+# https://docs.djangoproject.com/en/{{ docs_version }}/ref/middleware/
 MIDDLEWARE = [
+    # 'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
