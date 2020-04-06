@@ -2,8 +2,12 @@
 source = .
 branch = True
 omit =
-    *migrations*,
+    *migrations*
+    *settings/prod.py
     *wsgi.py
+    .tox/*
+    manage.py
+    node_modules/
 
 [report]
 show_missing = True
