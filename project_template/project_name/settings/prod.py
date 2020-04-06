@@ -67,7 +67,7 @@ ADMINS = [
     ('John Smith', 'john.smith@domain.tld'),
 ]
 
-SERVER_EMAIL = 'no-reply@domain.tld'
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 
 # Security
