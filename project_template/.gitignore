@@ -15,6 +15,12 @@ htmlcov/
 .data/
 db.sqlite3
 
+# Node.js
+node_modules/
+
+# Sphinx
+/docs/_build/
+
 # pyenv
 .python-version
 
