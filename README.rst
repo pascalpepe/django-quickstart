@@ -2,7 +2,7 @@
 Quick Start with Django
 =======================
 
-.. image:: https://img.shields.io/badge/django-2.2-092e20.svg
+.. image:: https://img.shields.io/badge/django-2.2-0c4b33.svg
    :alt: Django 2.2
    :target: https://gitlab.com/pascalpepe/django-quickstart
 
@@ -14,7 +14,7 @@ Quick Start with Django
    :alt: MIT License
    :target: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
 
-Project template for a quick start with Django_ framework.
+Project template for a quick start with the Django_ framework.
 
 :Source code: https://gitlab.com/pascalpepe/django-quickstart
 :Issue tracker: https://gitlab.com/pascalpepe/django-quickstart/issues
@@ -25,7 +25,7 @@ Overview
 
 This repository provides yet another project template that aims at taking care
 of the necessary boilerplate when starting a new Django project. It is
-obviously more opinionated that the one included in Django, but hopefully not
+obviously more opinionated than the one included in Django, but hopefully not
 too much.
 
 By using this template, you will start with a project for which:
@@ -42,14 +42,14 @@ By using this template, you will start with a project for which:
 * Error pages can be browsed during development.
 * Emails are sent with the `console backend`_ during development.
 
-Besides, this project template includes some commonly used tools for testing
-and linting:
+Additionally, this project template includes some commonly used tools for
+testing and linting:
 
 * Tests are automated with tox_.
 * Code coverage is measured with `coverage.py`_.
 * Linting is performed with flake8_.
-* django-debug-toolbar_ is installed and already set up during development.
-* A configuration file for `GitLab CI`_ is provided.
+* `django-debug-toolbar`_ is installed and already set up during development.
+* A minimal configuration file for `GitLab CI`_ is provided.
 
 
 Supported versions of Django and Python
@@ -114,7 +114,7 @@ This project is licensed under the `MIT License`_.
 .. _tox: https://tox.readthedocs.io
 .. _`coverage.py`: https://coverage.readthedocs.io
 .. _flake8: https://flake8.readthedocs.io
-.. _django-debug_toolbar: https://django-debug-toolbar.readthedocs.io
+.. _`django-debug_toolbar`: https://django-debug-toolbar.readthedocs.io
 .. _`GitLab CI`: https://docs.gitlab.com/ee/ci/README.html
 .. _`Install Django 2.2`: https://docs.djangoproject.com/en/2.2/topics/install/
 .. _`Python virtual environment`: https://docs.python.org/3/library/venv.html
