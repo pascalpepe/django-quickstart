@@ -39,13 +39,13 @@ INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DJANGO_APPS
 # get their functionalities from your Web server instead.
 # https://docs.djangoproject.com/en/{{ docs_version }}/ref/middleware/
 MIDDLEWARE = [
-    # 'django.middleware.security.SecurityMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # 'django.middleware.security.XFrameOptionsMiddleware',
+    'django.middleware.security.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = '{{ project_name }}.urls'
