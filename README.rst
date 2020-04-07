@@ -42,7 +42,7 @@ By using this template, you will start with a project for which:
 * Error pages can be browsed during development.
 * Emails are sent with the `console backend`_ during development.
 
-Additionally, this project template includes some commonly used tools for
+Additionally, this project template relies on some commonly used tools for
 testing and linting:
 
 * Tests are automated with tox_.
@@ -52,27 +52,12 @@ testing and linting:
 * A minimal configuration file for `GitLab CI`_ is provided.
 
 
-Supported versions of Django and Python
-=======================================
-
-This project aims at supporting the latest LTS version of Django.
-
-======= ===================================
-Django  Python
-======= ===================================
-2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
-======= ===================================
-
-For each version of Python, it is recommended that you install the latest
-micro release (A.B.C) available on your system.
-
-For Django, the latest LTS micro release (2.2.x) is recommended.
-
-
 Quick usage guide
 =================
 
 1. `Install Django 2.2`_ (preferably within a `Python virtual environment`_).
+   See the compatibility table below for more information on the supported
+   versions of Django and Python.
 
 2. Get the project template::
 
@@ -100,6 +85,23 @@ Quick usage guide
      python manage.py runserver
 
 
+Supported versions of Django and Python
+=======================================
+
+This project aims at supporting the latest LTS version of Django.
+
+======= ===================================
+Django  Python
+======= ===================================
+2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
+======= ===================================
+
+For each version of Python, it is recommended that you install the latest
+micro release (A.B.C) available on your system.
+
+For Django, the latest LTS micro release (2.2.x) is recommended.
+
+
 Changelog
 =========
 
@@ -111,6 +113,8 @@ License
 
 This project is licensed under the `MIT License`_.
 
+This project redistributes open source software. See the `NOTICE`_ file for
+more information.
 
 .. _Django: https://www.djangoproject.com
 .. _`using a custom user model when starting a project`: https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
