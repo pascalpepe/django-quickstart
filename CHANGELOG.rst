@@ -47,11 +47,11 @@ Supported versions of Django and Python
 
 * Django 2.2.8 added support for Python 3.8. The compatibility table is now:
 
-  ====== ======= ===================================
-  Branch Django  Python
-  ====== ======= ===================================
-  master 2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
-  ====== ======= ===================================
+====== ======= ===================================
+Branch Django  Python
+====== ======= ===================================
+master 2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
+====== ======= ===================================
 
 
 Version 3.1
@@ -67,8 +67,7 @@ General changes
 
 * Moved project-level templates, static files and locale files to the root
   directory.
-* Moved flake8 configuration from ``setup.cfg`` to ``tox.ini``. [Reverted in
-  version 3.2.]
+* Moved flake8 configuration from ``setup.cfg`` to ``tox.ini``.
 * Moved collected static files and media files to ``.local/`` during
   development. This directory is ignored by version control. [Renamed as
   ``.data/`` in version 3.2.]
@@ -134,11 +133,11 @@ Supported versions of Django and Python
 * Support for Django 1.11 (old LTS) and Django 2.1 is dropped.
 * The compatibility table is now:
 
-  ====== ======= =============
-  Branch Django  Python
-  ====== ======= =============
-  master 2.2 LTS 3.5, 3.6, 3.7
-  ====== ======= =============
+====== ======= =============
+Branch Django  Python
+====== ======= =============
+master 2.2 LTS 3.5, 3.6, 3.7
+====== ======= =============
 
 Changed
 -------
@@ -198,13 +197,13 @@ Supported versions of Django and Python
   ``support/django111``.
 * The compatibility table is now:
 
-  ================= ======== =============
-  Branch            Django   Python
-  ================= ======== =============
-  support/django111 1.11 LTS 3.4, 3.5, 3.6
-  ----------------- -------- -------------
-  master            2.1      3.5, 3.6, 3.7
-  ================= ======== =============
+================= ======== =============
+Branch            Django   Python
+================= ======== =============
+support/django111 1.11 LTS 3.4, 3.5, 3.6
+----------------- -------- -------------
+master            2.1      3.5, 3.6, 3.7
+================= ======== =============
 
 Changed
 -------

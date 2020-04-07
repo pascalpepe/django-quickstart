@@ -129,3 +129,4 @@ more information.
 .. _`using the startproject command`: https://docs.djangoproject.com/en/2.2/ref/django-admin/#startproject
 .. _CHANGELOG.rst: https://gitlab.com/pascalpepe/django-quickstart/blob/master/CHANGELOG.rst
 .. _`MIT License`: https://gitlab.com/pascalpepe/django-quickstart/blob/master/LICENSE
+.. _`NOTICE`: https://gitlab.com/pascalpepe/django-quickstart/blob/master/NOTICE
