@@ -5,7 +5,53 @@ Changelog
 Latest
 ======
 
-* ..
+This release continues the changes in project layout and settings introduced in
+version 3.1.
+
+General changes
+---------------
+
+* Moved the project template to its own directory: ``project_template/``
+* Moved the Accounts application to the project directory.
+* Split requirements into environment-specific files.
+* Changed imports from relative to absolute everywhere.
+* Added a ``NOTICE`` file.
+* Updated the following files in accordance with the changes introduced in this
+  version: ``.flake8``, ``.gitignore``, ``.gitlab-ci.yml``, ``README``,
+  ``tox.ini``.
+
+Settings changes
+----------------
+
+* Split the ``INSTALLED_APPS`` into three lists: ``LOCAL_APPS``,
+  ``THIRD_PARTY_APPS`` and ``DJANGO_APPS``.
+* Changed ``DATA_DIR`` during development from ``.local/`` to ``.data/``.
+* Changed the database backend to SQLite3 during development.
+* Set ``SERVER_EMAIL`` to ``DEFAULT_FROM_EMAIL``.
+
+New application: Home
+---------------------
+
+* Started the Home application.
+* Added a minimal template view for the home page.
+* Added tests for the home view.
+
+New testing tools
+-----------------
+
+* Set up django-debug-toolbar during development.
+* Added coverage.py configuration.
+
+Supported versions of Django and Python
+---------------------------------------
+
+* Django 2.2.8 added support for Python 3.8. The compatibility table is now:
+
+  ====== ======= ===================================
+  Branch Django  Python
+  ====== ======= ===================================
+  master 2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
+  ====== ======= ===================================
 
 
 Version 3.1
@@ -13,33 +59,30 @@ Version 3.1
 
 2020-01-01
 
-Dependencies updates
---------------------
-
-* Updated psycopg2-binary to version 2.8.4.
-* Changed the default Python image to version 3.7 in GitLab CI. Python 3.7 is
-  the default version available in Debian stable (10, Buster).
-
-Changed settings
-----------------
-
 This update contains many changes in settings and a reorganization of the
 project layout.
 
-* Renamed ``settings/common.py`` as ``settings/base.py``.
-* Reorganized settings in order to use environment variables instead of secret
-  files.
-* Moved email-based error-reporting settings to ``settings/prod.py``.
-* Moved flake8 config from ``setup.cfg`` to ``tox.ini``.
-* Changed max line length to 79 (default flake8 value).
-* Moved local static files:
-
-  - to ``/.local/`` during development (this directory is ignored by version
-    control).
-  - using a ``DATA_DIR`` environment variable in production.
+General changes
+---------------
 
 * Moved project-level templates, static files and locale files to the root
   directory.
+* Moved flake8 configuration from ``setup.cfg`` to ``tox.ini``. [Reverted in
+  version 3.2.]
+* Moved collected static files and media files to ``.local/`` during
+  development. This directory is ignored by version control. [Renamed as
+  ``.data/`` in version 3.2.]
+
+Settings changes
+----------------
+
+* Renamed ``settings/common.py`` as ``settings/base.py``.
+* Changed sensitive settings in order to be loaded from environment variables
+  instead of secret files.
+* Moved email-based error-reporting settings to ``settings/prod.py``.
+* Changed max line length to 79 (default flake8 value).
+* Added a ``DATA_DIR`` constant to indicate the path to ``STATIC_ROOT`` and
+  ``MEDIA_ROOT``.
 
 New
 ---
@@ -52,22 +95,30 @@ New
   - 500 Internal Server Error
 
 * Added URL paths so as to be able to browse error pages during development.
-* Added URL path to serve files uploaded by users (i.e. ``/.local/media/``)
-  during development
+* Added URL path to serve files uploaded by users during development.
 
 New application: Accounts
 -------------------------
 
+It is recommended to use a custom user when starting a project (see
+https://docs.djangoproject.com/en/2.2/ref/django-admin/#startproject).
+
 * Started the Accounts application.
-* Added a custom user model. This model behaves identically to the default user
-  model, but it will be easier to customize it in the future if the need
-  arises.
+* Added a custom user model. It behaves identically to the default user model,
+  but this makes it easier to customize it mid-project if needed.
 
 Removed
 -------
 
 * Removed the Sphinx docs entirely from the project template, as it contained
   little to no customization from the default ``sphinx-quickstart`` command.
+
+Dependencies updates
+--------------------
+
+* Updated psycopg2-binary to version 2.8.4.
+* Changed the default Python image to version 3.7 in GitLab CI. Python 3.7 is
+  the default version available in Debian stable (10, Buster).
 
 
 Version 3.0
