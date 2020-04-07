@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% comment "Django license" %}
+Based on https://github.com/django/django/blob/master/django/views/templates/default_urlconf.html
+Copyright (c) Django Software Foundation and individual contributors.
+Licensed under the BSD 3-Clause License.
+See the NOTICE file for more information.
+{% endcomment %}
+
+{% block title %}{% trans "Django: the Web framework for perfectionists with deadlines." %}{% endblock %}
+
+{% block content %}
+<div class="text-center mb-4 mb-md-5">
+  <h1 class="display-4">Quick Start with Django</h1>
+  <p class="lead">{% trans "The install worked successfully! Congratulations!" %}</p>
+  <p class="mb-0">
+    {% blocktrans %}View <a href="https://docs.djangoproject.com/en/{{ version }}/releases/" target="_blank" rel="noopener">release notes</a> for Django {{ version }}{% endblocktrans %}.
+  </p>
+</div>
+<div class="row">
+  <div class="col-12 col-md-4 mb-3 mb-md-0">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h4 card-title"><a href="https://docs.djangoproject.com/en/{{ version }}/" target="_blank" rel="noopener">{% trans "Django Documentation" %}</a></h2>
+        <p class="card-subtitle text-muted">{% trans "Topics, references, &amp; how-to's" %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4 mb-3 mb-md-0">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h4 card-title"><a href="https://docs.djangoproject.com/en/{{ version }}/intro/tutorial01/" target="_blank" rel="noopener">{% trans "Tutorial: A Polling App" %}</a></h2>
+        <p class="card-subtitle text-muted">{% trans "Get started with Django" %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h4 card-title"><a href="https://www.djangoproject.com/community/" target="_blank" rel="noopener">{% trans "Django Community" %}</a></h2>
+        <p class="card-subtitle text-muted">{% trans "Connect, get help, or contribute" %}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
